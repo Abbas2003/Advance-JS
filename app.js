@@ -279,7 +279,7 @@ let v = _ => _
 console.log(v("Sir Basit Zindabad"))
 
 // c) Closures
-;
+
 // d) lexical scoping
 
 let val = "xyz"
