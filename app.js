@@ -299,15 +299,69 @@ function defParam(b = 1){
 //#endregion
 
 //#region 11) Array Functions
+// All array functions provides Loop/Iteration. CallBack function on their parameter. Callback function iterates on every index. In Every callBack fun(), we get value in 1st param, index in 2nd & complete array in 3rd param. 
 
 // a) === Map
+// It always returns an Array
 let s = [1, 2, 3, 4, 5];
 s.map((item, index, arr) => {
     console.log(item, index, arr)
 })
 
 let n = ['A', 'B', 'B', 'A', 'S']
-n.map((v,i)=>{
+const resOfN = n.map((v,i)=>{
     console.log(i+1,v)
 })
+
+
+let arrayOfObj = [
+    {
+        id: 1,
+        name: "Abbas"
+    },
+    {
+        id: 2,
+        name: "Saif"
+    },
+    {
+        id: 3,
+        name: "Abdullah"
+    },
+    {
+        id: 4,
+        name: "Hammad"
+    },
+    {
+        id: 5,
+        name: "Hussain"
+    },
+]
+
+let resOfObj = arrayOfObj.map((x, i, z) => {
+    return x.name;
+})
+console.log(resOfObj)
+// b) === Filter
+// Specific data filtered
+
+// c) === ForEach
+// To do any work for each element
+
+// d) === Reduce
+// calculation. back n forth record. 
+
+// e) === Some
+// checks the specific value present or not(zaroori nh k sab).
+
+// f) === Every
+// same as Some func() but on all every value
+
+// g) === Find
+// Checks the value and return it on first occurance
+
+// i) === FindIndex
+// finds the index of any array element
+
+// j) === Flat
+
 //#endregion
